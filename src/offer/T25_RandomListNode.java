@@ -43,7 +43,7 @@ public class T25_RandomListNode {
 			tmp = cloneNode.next;
 		}
 		
-		//step3：拆分链表，1 3 5 7···为原链表，2 4 6 8···为clone链表
+		//step3：拆分链表（详见图片）
 		tmp = pHead;
 		RandomListNode cloneHead = tmp.next;
 		while(tmp.next != null) {
