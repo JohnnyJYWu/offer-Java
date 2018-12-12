@@ -37,7 +37,7 @@ public class T27_Permutation {
 	        hasUsed[i] = true;
 	        str.append(chars[i]);
 	        
-	        //迭代，对后面的字符进行排列
+	        //递归对后面的字符进行排列
 	        permutation(chars, hasUsed, str);
 	        
 	        //此步重要，去除此循环加入的字符，回退到上一步的排列，与T24中去除节点道理一样
