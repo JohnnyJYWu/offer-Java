@@ -26,7 +26,7 @@ public class T29_GetLeastNumbers_Solution {
     }
 	
 	//算法，快速选择法，由快排演变而来
-	public ArrayList<Integer> GetLeastNumbers_Solution1(int[] input, int k) {
+	public ArrayList<Integer> GetLeastNumbers_Solution_1(int[] input, int k) {
 		ArrayList<Integer> list = new ArrayList<>();
         
         if(k > input.length || k <= 0) return list;

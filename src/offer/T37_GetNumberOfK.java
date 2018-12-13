@@ -19,7 +19,7 @@ public class T37_GetNumberOfK {
 		return sum;
     }
 	
-	public int GetNumberOfK1(int[] array , int k) {//二分查找，找到第一次和最后一次k出现的位置
+	public int GetNumberOfK_1(int[] array , int k) {//二分查找，找到第一次和最后一次k出现的位置
 		int first = getFirstK(array, k);
 		int last = getLastK(array, k);
 		
