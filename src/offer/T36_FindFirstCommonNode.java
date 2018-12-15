@@ -20,7 +20,7 @@ public class T36_FindFirstCommonNode {
 		ListNode node1 = pHead1;
 		ListNode node2 = pHead2;
 		
-		while(node1 != node2) {//公共节点后面即为公共链表
+		while(node1 != node2) {//公共结点后面即为公共链表
 			if(node1 == null) {
 				node1 = pHead2;
 			} else {
