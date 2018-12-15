@@ -21,7 +21,7 @@ public class T16_Merge {
 		ListNode tmp = head;
 		
 		while(list1 != null && list2 != null) {
-			if(list1.val < list2.val) {//比较两个链表当前节点的值，小的先插入新链表
+			if(list1.val < list2.val) {//比较两个链表当前结点的值，小的先插入新链表
 				tmp.next = list1;
 				list1 = list1.next;
 			} else {
