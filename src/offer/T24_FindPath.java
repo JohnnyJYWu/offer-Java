@@ -35,9 +35,9 @@ public class T24_FindPath {
 		
 		path.add(node.val);
 		target -= node.val;//减法的思想，目标值能减为0则是一条路径
-		if(target == 0 && node.left == null && node.right == null) {//已经到达叶子节点且targe正好减完
+		if(target == 0 && node.left == null && node.right == null) {//已经到达叶子结点且targe正好减完
 			result.add(new ArrayList<Integer>(path));
-		} else if(target > 0) {//若>0则继续对其左右子节点进行迭代判断
+		} else if(target > 0) {//若>0则继续对其左右子结点进行迭代判断
 			findPathDFS(node.left, target, path);
 			findPathDFS(node.right, target, path);
 		}

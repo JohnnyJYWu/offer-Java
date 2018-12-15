@@ -20,25 +20,25 @@ public class T25_RandomListNode {
 	public RandomListNode Clone(RandomListNode pHead) {
 		if(pHead == null) return null;
 		
-		//step1：在每个节点的后面（或者说每个节点与下一个节点中间）插入【新节点】
-		//该新节点为克隆节点，这么做是为了连接random节点
+		//step1：在每个结点的后面（或者说每个结点与下一个结点中间）插入【新结点】
+		//该新结点为克隆结点，这么做是为了连接random结点
 		RandomListNode tmp = pHead;
 		while(tmp != null) {
 			RandomListNode cloneNode = new RandomListNode(tmp.label);
 			
-			//插入clone节点
+			//插入clone结点
 			cloneNode.next = tmp.next;
 			tmp.next = cloneNode;
-			//移到原链表的下一个节点
+			//移到原链表的下一个结点
 			tmp = cloneNode.next;
 		}
 		
-		//step2：连接random节点
+		//step2：连接random结点
 		tmp = pHead;
 		while(tmp != null) {
 			RandomListNode cloneNode = tmp.next;
 			if(tmp.random != null) {
-				cloneNode.random = tmp.random.next;//tmp.random是原链表的节点，tmp.random.next才是那个节点的clone节点
+				cloneNode.random = tmp.random.next;//tmp.random是原链表的结点，tmp.random.next才是那个结点的clone结点
 			}
 			tmp = cloneNode.next;
 		}

@@ -23,22 +23,22 @@ public class T23_VerifySquenceOfBST {
     	//终止条件
 		if(first >= last) return true;
 		
-		int rootValue = sequence[last];//后序遍历的根节点为最后一个
+		int rootValue = sequence[last];//后序遍历的根结点为最后一个
 		int index = first;
 		
-		while(sequence[index] <= rootValue && index < last) {//比根节点小的为左子树，大的为右子树
+		while(sequence[index] <= rootValue && index < last) {//比根结点小的为左子树，大的为右子树
 			index ++;
 		}
-		//此时sequence[index]是第一个比根节点大的值
+		//此时sequence[index]是第一个比根结点大的值
 		//可将sequence[0]~sequence[index-1]认为是左子树，sequence[index]~sequence[last-1]认为是右子树
 		for(int i = index; i < last; i ++) {
-			if(sequence[i] < rootValue) {//若右子树中存在比根节点小的，则不是二叉搜索树
+			if(sequence[i] < rootValue) {//若右子树中存在比根结点小的，则不是二叉搜索树
 				return false;
 			}
 		}
 		
-		//此时分别对根节点的左右子树进行迭代判断，全部为true则是后序遍历
+		//此时分别对根结点的左右子树进行迭代判断，全部为true则是后序遍历
 		return verify(sequence, first, index - 1)
-				&& verify(sequence, index, last - 1);//last为根节点
+				&& verify(sequence, index, last - 1);//last为根结点
     }
 }

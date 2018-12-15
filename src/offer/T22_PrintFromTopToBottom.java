@@ -32,7 +32,7 @@ public class T22_PrintFromTopToBottom {
 		
 		while(!queue.isEmpty()) {
 			TreeNode tmp = queue.poll();
-			//先左后右按顺序压入子节点
+			//先左后右按顺序压入子结点
 			if(tmp.left != null) queue.add(tmp.left);
 			if(tmp.right != null) queue.add(tmp.right);
 			
