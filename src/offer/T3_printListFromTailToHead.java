@@ -37,7 +37,7 @@ public class T3_printListFromTailToHead {
 	}
 	
 	public ArrayList<Integer> printListFromTailToHead_1(ListNode listNode) {
-		//使用递归实现，先加入链表后面的节点，再加入当前节点
+		//使用递归实现，先加入链表后面的结点，再加入当前结点
 	    ArrayList<Integer> arrayList = new ArrayList<>();
 	    
 	    if(listNode != null) {

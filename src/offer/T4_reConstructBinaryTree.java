@@ -31,7 +31,7 @@ public class T4_reConstructBinaryTree {
 	
 	private TreeNode getBiTree(int[] pre, int preLeft, int preRight, //前序遍历及当前在前序遍历中的区间
 								int[] in, int inLeft, int inRight) { //中序遍历及当前在前序遍历中的区间
-	    if(preLeft == preRight) {//即根据前序遍历，当前节点无子节点
+	    if(preLeft == preRight) {//即根据前序遍历，当前结点无子结点
 	    	return new TreeNode(pre[preLeft]);
 	    }
 	    if(preLeft > preRight || inLeft > inRight) {
@@ -40,7 +40,7 @@ public class T4_reConstructBinaryTree {
 	    
 	    TreeNode root = new TreeNode(pre[preLeft]);
 	    int inIndex = map.get(root.val);
-	    int leftTreeSize = inIndex - inLeft;//该节点左半部分的节点数
+	    int leftTreeSize = inIndex - inLeft;//该结点左半部分的结点数
 	    
 	    //递归，获取左子树及右子树
 	    root.left = getBiTree(pre, preLeft + 1, preLeft + leftTreeSize, //左半部分在前序遍历中的区间
