@@ -5,7 +5,7 @@ package offer;
  * 
  */
 
-public class T6_minNumberInRotateArray {
+public class T06_minNumberInRotateArray {
 	//旋转数组的最小数字
 	public int minNumberInRotateArray(int[] array) {
 	    if(array.length == 0) {

@@ -7,7 +7,7 @@ import java.util.Stack;
  * 
  */
 
-public class T5_StackToLinkedList {
+public class T05_StackToLinkedList {
 	//用两个栈实现队列
 	Stack<Integer> stack1 = new Stack<Integer>();//stack1入栈时使用
     Stack<Integer> stack2 = new Stack<Integer>();//stack2出栈时使用，直接出栈即可

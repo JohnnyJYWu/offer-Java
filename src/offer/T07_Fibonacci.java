@@ -5,7 +5,7 @@ package offer;
  * 
  */
 
-public class T7_Fibonacci {
+public class T07_Fibonacci {
 	//斐波那契数列
 	public int Fibonacci(int n) {//n<=39
 		int[] array = new int[40];

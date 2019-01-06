@@ -8,7 +8,7 @@ import java.util.Map;
  * 
  */
 
-public class T4_reConstructBinaryTree {
+public class T04_reConstructBinaryTree {
 	//重建二叉树
 	//Definition for binary tree
 	public class TreeNode {

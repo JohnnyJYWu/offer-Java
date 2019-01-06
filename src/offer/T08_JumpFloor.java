@@ -5,7 +5,7 @@ package offer;
  * 
  */
 
-public class T8_JumpFloor {
+public class T08_JumpFloor {
 	//跳台阶
 	public int JumpFloor(int target) {
 		if(target == 0) {

@@ -5,7 +5,7 @@ package offer;
  * 
  */
 
-public class T2_replaceSpace {
+public class T02_replaceSpace {
 	//替换空格
 	public String replaceSpace(StringBuffer str) {
 		int oldLen = str.length();

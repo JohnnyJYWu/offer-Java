@@ -8,7 +8,7 @@ import java.util.Stack;
  * 
  */
 
-public class T3_printListFromTailToHead {
+public class T03_printListFromTailToHead {
 	//从尾到头打印链表
 	public class ListNode {
 		int val;
